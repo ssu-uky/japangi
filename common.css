@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+*{ margin: 0; padding: 0;}
+
+a{text-decoration: none;}
+li{list-style: none;}
+img{border: none;}
+
+.clearfix::before, .clearfix::after
+{display: block; content:''; clear:both;}
+
+#wrap{
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 350px;
+    height: 700px;
+    box-shadow: 0 0 0 3px;
+
+}
+
+#drinks ul{
+    padding: 30px 10px;
+    float: left;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    /* background-color: yellow; */
+}
+
+#drinks ul li.drink{
+    box-shadow: 0 0 0 1px;
+    text-align: center;
+    line-height: 85px;
+    margin-left: 20px;
+    width: 85px;
+    height: 85px;
+    float: left;
+    color: #000;
+}
+
+#coins{
+    color:#fff;
+    display: flex;
+    align-items: center;
+    width:100%;
+    height: 20%;
+    /* background-color: paleturquoise; */
+}
+
+.coin{
+    box-shadow: 0 0 0 1px;
+    margin-left: 35px;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 70px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: rgb(6,14,131);
+    background: linear-gradient(0deg, rgba(6,14,131,1) 0%, rgba(12,25,180,1) 100%);
+    border: none;
+    }
+
+.coin:hover {
+    cursor: pointer;
+    background: rgb(0,3,255);
+    background: linear-gradient(0deg, rgba(0,3,255,1) 0%, rgba(2,126,251,1) 100%);
+}
+
+.result_wrap{
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    /* background-color: #fff; */
+}
+
+.total{
+    text-decoration: underline;
+    width: 200px;
+    height: 50px;
+    background-color: lightgoldenrodyellow;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 17px;
+    float: left;
+    margin: 0 10px 0 35px;
+}
+
+.button{
+    margin-top: 10px;
+    text-align: center;
+    width: 70px;
+    height: 30px;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid#000;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+    background: rgb(96,9,240);
+    background: linear-gradient(0deg, rgba(96,9,240,1) 0%, rgba(129,5,240,1) 100%);
+    border: none;
+    }
+
+.button:before {
+        height: 0%;
+        width: 2px;
+}
+.button:hover {
+    box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+}
+
+.result_final{
+    box-shadow: 0 0 0 1px;
+    width: 80%;
+    height: 230px;
+    box-sizing: border-box;
+    margin: 50px auto;
+    padding: 50px;
+    text-align: center;
+}
